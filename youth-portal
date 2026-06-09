@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodwar Youth Digital Skills Hub</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        :root { --navy: #001219; --teal: #0a9396; --gold: #ee9b00; --light-bg: #f8fafc; --border: #e2e8f0; }
+
+        body { background-color: var(--light-bg); color: var(--navy); padding: 20px; }
+        .dashboard-container { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 260px 1fr; gap: 30px; }
+
+        aside { background-color: white; border: 1px solid var(--border); border-radius: 12px; padding: 30px 20px; height: fit-content; }
+        .gov-brand { font-size: 18px; font-weight: 800; letter-spacing: 0.5px; color: var(--navy); margin-bottom: 40px; border-bottom: 2px solid var(--light-bg); padding-bottom: 15px; }
+        .gov-brand span { color: var(--teal); }
+        .nav-links { list-style: none; }
+        .nav-links li { margin-bottom: 15px; }
+        .nav-links a { text-decoration: none; color: #64748b; font-weight: 600; display: block; padding: 10px 15px; border-radius: 6px; transition: all 0.2s; }
+        .nav-links a:hover, .nav-links a.active { background-color: var(--light-bg); color: var(--teal); }
+
+        main { display: flex; flex-direction: column; gap: 30px; }
+        .header-bar { display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px 30px; border: 1px solid var(--border); border-radius: 12px; }
+        .header-bar h1 { font-size: 24px; font-weight: 700; }
+        .badge { background: #ffe4e6; color: #9f1239; padding: 6px 12px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+
+        .program-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .program-card { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+        .program-img { width: 100%; height: 180px; object-fit: cover; }
+        .program-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .program-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--navy); }
+        .program-desc { color: #64748b; font-size: 14px; margin-bottom: 15px; line-height: 1.5; }
+        
+        .meta-row { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: var(--teal); margin-bottom: 15px; }
+        .enroll-btn { width: 100%; background-color: var(--teal); color: white; border: none; padding: 10px; font-weight: 700; border-radius: 6px; cursor: pointer; text-align: center; text-decoration: none; transition: background 0.2s; }
+        .enroll-btn:hover { background-color: #005f73; }
+
+        @media (max-width: 992px) { .dashboard-container { grid-template-columns: 1fr; } aside { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside>
+            <div class="gov-brand">COUNTY<span>PORTAL</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Tourism Hub</a></li>
+                <li><a href="dashboard.html">Agribusiness Data</a></li>
+                <li><a href="revenue.html">Revenue Portals</a></li>
+                <li><a href="projects.html">County Projects</a></li>
+                <li><a href="#" class="active">Youth Digital Skills</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="header-bar">
+                <div>
+                    <h1>Ajira Digital & Innovation Hub</h1>
+                    <p style="color: #64748b; font-size: 14px; margin-top: 2px;">Empowering Lodwar youth with global freelance gig-economy skills</p>
+                </div>
+                <div class="badge">🚀 2,500 Cohort Slots Open</div>
+            </div>
+
+            <div class="program-grid">
+                <div class="program-card">
+                    <img class="program-img" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" alt="UI UX Design layout mapping">
+                    <div class="program-content">
+                        <div>
+                            <div class="program-title">Frontend Web Development</div>
+                            <p class="program-desc">Learn HTML5, CSS3 Grid/Flexbox, and Javascript to build responsive modern municipal architectures and client business websites.</p>
+                        </div>
+                        <div>
+                            <div class="meta-row"><span>⏳ 12 Weeks</span><span>📍 Lodwar ICT Center</span></div>
+                            <button class="enroll-btn">Apply For Scholarship</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <img class="program-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Digital marketing charts dashboard analytics">
+                    <div class="program-content">
+                        <div>
+                            <div class="program-title">Digital Marketing & Copywriting</div>
+                            <p class="program-desc">Master online asset management, search engine optimization, and email marketing development to manage local tourism accounts.</p>
+                        </div>
+                        <div>
+                            <div class="meta-row"><span>⏳ 6 Weeks</span><span>📍 Online Self-Paced</span></div>
+                            <button class="enroll-btn">Apply For Scholarship</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
