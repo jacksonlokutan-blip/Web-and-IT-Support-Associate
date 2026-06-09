@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>County Digital Government Transition Suite</title>
+    <style>
+        /* BRAND COLOR PALETTE & RESET */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        :root { --navy: #001219; --teal: #0a9396; --gold: #ee9b00; --light-bg: #f8fafc; --border: #e2e8f0; }
+
+        body { background-color: var(--light-bg); color: var(--navy); line-height: 1.6; }
+
+        /* HEADER BANNER */
+        header { background-color: white; border-bottom: 1px solid var(--border); padding: 40px 10%; text-align: center; }
+        .gov-title { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+        .gov-title span { color: var(--teal); }
+        .gov-subtitle { color: #64748b; font-size: 16px; max-width: 600px; margin: 0 auto; }
+
+        /* GRID CONTAINER */
+        .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        .grid-title { font-size: 20px; font-weight: 700; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 0.5px; border-left: 4px solid var(--teal); padding-left: 12px; }
+        
+        .portal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 25px; }
+
+        /* GATEWAY CARDS */
+        .portal-card { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 4px 6px rgba(0,0,0,0.01); transition: transform 0.3s, box-shadow 0.3s; }
+        .portal-card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,18,25,0.05); border-color: var(--teal); }
+        
+        .card-img { width: 100%; height: 160px; object-fit: cover; }
+        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        
+        .module-badge { font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--teal); background: #f0fdfa; padding: 4px 10px; border-radius: 4px; width: fit-content; margin-bottom: 12px; }
+        .card-title { font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--navy); }
+        .card-desc { color: #64748b; font-size: 14px; margin-bottom: 20px; }
+        
+        .launch-btn { display: block; width: 100%; background-color: var(--navy); color: white; text-align: center; padding: 12px; font-weight: 700; border-radius: 6px; text-decoration: none; transition: background 0.2s; }
+        .launch-btn:hover { background-color: var(--teal); }
+
+        /* FOOTER */
+        footer { background-color: var(--navy); color: #94a3b8; text-align: center; padding: 40px 20px; font-size: 14px; margin-top: 60px; }
+        footer p span { color: var(--teal); font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="gov-title">COUNTY<span>PORTAL</span> INTERFACE SUITE</div>
+        <div class="gov-subtitle">Automated e-Government solutions, public accountability tracking systems, and decentralized citizen service modules.</div>
+    </header>
+
+    <div class="container">
+        <h2 class="grid-title">Available Service Modules</h2>
+        
+        <div class="portal-grid">
+
+            <div class="portal-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80" alt="Lake Turkana Destination Banner">
+                <div class="card-content">
+                    <div>
+                        <div class="module-badge">Civic Engagement</div>
+                        <div class="card-title">Lake Turkana Tourism Hub</div>
+                        <p class="card-desc">Public destination portal highlighting geographic landmarks, regional cultural heritage, and eco-tourism booking vectors.</p>
+                    </div>
+                    <a href="county-digital-tourism-portal/" class="launch-btn">Launch Live Module →</a>
+                </div>
+            </div>
+
+            <div class="portal-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Borehole Pipeline Construction">
+                <div class="card-content">
+                    <div>
+                        <div class="module-badge">Public Health & Utilities</div>
+                        <div class="card-title">Clean Water Infrastructure</div>
+                        <p class="card-desc">Information framework demonstrating asset tracking arrays for sub-county automated deep-well solar borehole pipelines.</p>
+                    </div>
+                    <a href="clean-water-initiative/" class="launch-btn">Launch Live Module →</a>
+                </div>
+            </div>
+
+            <div class="portal-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=600&q=80" alt="Agribusiness Livestock Grains">
+                <div class="card-content">
+                    <div>
+                        <div class="module-badge">Administration & Commerce</div>
+                        <div class="card-title">Agribusiness Intelligence</div>
+                        <p class="card-desc">Internal data dashboard tracking daily market prices for livestock auctions, local fisheries, and agricultural schemes.</p>
+                    </div>
+                    <a href="county-investment-agribusiness-data-dashboard/" class="launch-btn">Launch Live Module →</a>
+                </div>
+            </div>
+
+            <div class="portal-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Public Infrastructure Projects">
+                <div class="card-content">
+                    <div>
+                        <div class="module-badge">Public Accountability</div>
+                        <div class="card-title">CIDP Projects Implementation</div>
+                        <p class="card-desc">Transparency terminal displaying physical construction milestones, progress tracking bars, and fiscal budget allocations.</p>
+                    </div>
+                    <a href="county-projects-tracker/" class="launch-btn">Launch Live Module →</a>
+                </div>
+            </div>
+
+            <div class="portal-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" alt="Digital Skills ICT Lab Training">
+                <div class="card-content">
+                    <div>
+                        <div class="module-badge">Economic Empowerment</div>
+                        <div class="card-title">Ajira Youth Digital Skills Hub</div>
+                        <p class="card-desc">Registration system built for automated scholarship tracking, technical ICT intake pools, and online freelance freelance economy registration.</p>
+                    </div>
+                    <a href="youth-portal/" class="launch-btn">Launch Live Module →</a>
+                </div>
+            </div>
+
+            <div class="portal-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Secure Revenue Payments Terminal">
+                <div class="card-content">
+                    <div>
+                        <div class="module-badge">Citizen Self-Service</div>
+                        <div class="card-title">Unified Revenue e-Services</div>
+                        <p class="card-desc">Transactional desk mocking secure single business permits calculation processing, land rates processing, and M-PESA checkout streams.</p>
+                    </div>
+                    <a href="revenue-portal/" class="launch-btn">Launch Live Module →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Architected for Public Sector Digital Transition Implementation.</p>
+        <p style="margin-top: 10px; font-size: 12px; color: #64748b;">Associate Frontend Web Suite Portfolio • 2026 Fiscal Cycle Deployment</p>
+    </footer>
+
+</body>
+</html>
