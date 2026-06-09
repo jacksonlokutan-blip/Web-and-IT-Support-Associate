@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>County Clean Water Initiative</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        :root { --navy: #001219; --teal: #0a9396; --blue: #0077b6; --light-bg: #f8fafc; --border: #e2e8f0; }
+
+        body { background-color: var(--light-bg); color: var(--navy); padding: 20px; }
+        .dashboard-container { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 260px 1fr; gap: 30px; }
+
+        aside { background-color: white; border: 1px solid var(--border); border-radius: 12px; padding: 30px 20px; height: fit-content; }
+        .gov-brand { font-size: 18px; font-weight: 800; letter-spacing: 0.5px; color: var(--navy); margin-bottom: 40px; border-bottom: 2px solid var(--light-bg); padding-bottom: 15px; }
+        .gov-brand span { color: var(--teal); }
+        .nav-links { list-style: none; }
+        .nav-links li { margin-bottom: 15px; }
+        .nav-links a { text-decoration: none; color: #64748b; font-weight: 600; display: block; padding: 10px 15px; border-radius: 6px; transition: all 0.2s; }
+        .nav-links a:hover, .nav-links a.active { background-color: var(--light-bg); color: var(--teal); }
+
+        main { display: flex; flex-direction: column; gap: 30px; }
+        
+        .water-hero { background: linear-gradient(rgba(0, 119, 182, 0.8), rgba(0, 18, 25, 0.8)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; color: white; padding: 60px 40px; border-radius: 12px; text-align: center; }
+        .water-hero h1 { font-size: 36px; margin-bottom: 15px; }
+        .water-hero p { max-width: 700px; margin: 0 auto; font-size: 16px; color: #e2e8f0; }
+
+        .impact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .impact-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 25px; border-top: 4px solid var(--blue); }
+        .impact-num { font-size: 32px; font-weight: 800; color: var(--blue); margin-bottom: 10px; }
+        .impact-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .impact-desc { color: #64748b; font-size: 14.5px; line-height: 1.5; }
+
+        @media (max-width: 992px) { .dashboard-container { grid-template-columns: 1fr; } aside { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside>
+            <div class="gov-brand">COUNTY<span>PORTAL</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Tourism Hub</a></li>
+                <li><a href="dashboard.html">Agribusiness Data</a></li>
+                <li><a href="revenue.html">Revenue Portals</a></li>
+                <li><a href="projects.html">County Projects</a></li>
+                <li><a href="youth-portal.html">Youth Digital Skills</a></li>
+                <li><a href="#" class="active">Clean Water Plan</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="water-hero">
+                <h1>Sustainable Water Infrastructure Project</h1>
+                <p>Securing public health resilience through solar desalination, community water pans, and automated pipe networks across remote sub-counties.</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-num">45+</div>
+                    <div class="impact-title">Solar Boreholes</div>
+                    <p class="impact-desc">High-capacity automated deep-well boreholes run entirely on solar micro-grids to ensure zero fuel overhead costs.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-num">120K</div>
+                    <div class="impact-title">Citizens Served</div>
+                    <p class="impact-desc">Providing stable, clean drinking access points to lower regional waterborne disease vectors by up to 60%.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
